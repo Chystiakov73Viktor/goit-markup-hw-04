@@ -193,11 +193,18 @@ img {
     align-items: center;
 }
 .advantages-item {
+
     width: calc((100% - 72px) / 4);
 }
 
 .advantages-item:not(:last-child){
    margin-right: 24px;  
+}
+.advantages-icon {
+     background: #F4F4FD;
+    border-radius: 4px;
+    padding: 24px 100px;
+    margin-bottom: 8px;
 }
 .title {
     margin-bottom: 8px;
@@ -221,8 +228,12 @@ img {
 .doing-list {
     display: flex;
 }
+
 .doing-item:not(:last-child) {
     margin-right: 24px;
+}
+.doing-item {
+width: calc((100% - 48px) / 3);
 }
 .doing-title {
     margin-bottom: 72px;
@@ -247,7 +258,11 @@ img {
 .team-img {
     background-color: var(--background-primary);
     text-align: center;
-    border-radius: 0px 0px 4px 4px;   
+    border-radius: 0px 0px 4px 4px; 
+    width: calc((100% - 72px) / 4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+     0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-img:not(:last-child) {
     margin-right: 24px;
@@ -277,15 +292,55 @@ img {
     text-align: center;
 }
 .speciality {
+    margin-bottom: 8px;
     text-align: center;
     letter-spacing: 0.02em;
     line-height: 1.5;   
 }
+.social {
+    display: flex;
+    gap: 24px;
+}
+
+/*customers*/
+
+.customers {
+    padding-top: 106px;
+    padding-bottom: 120px;
+}
+.customers-title {
+    margin-bottom: 72px;
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    
+}
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+.customers-item {
+    width: calc((100% - 120px) / 6);
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+
 /*footer*/
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--background-hero);
+}
+.logo-social-footer {
+    display: flex;
+}
+.container-logo-footer {
+    margin-right: 120px;
 }
 .logo-footer {
     display: inline-block;
@@ -306,6 +361,29 @@ img {
     color: var(--color-light);
     line-height: 1.5;
 }
+.footer-text-media {
+    margin-bottom: 16px;
+    color: var(--color-hero);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+     
+}
+.social-list {
+    display: flex;
+    gap: 16px;
+}
+.footer-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #4D5AE5;
+}
+
 /*portfolio*/
 
 .portfolio {
